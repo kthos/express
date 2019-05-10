@@ -9,13 +9,13 @@ app.get('/', (req, res) => {
   })
 })
 
-app.get('/test1', (req, res) => {
+app.get('/status', (req, res) => {
   res.json({
     message: 'test 1 by nont'
   })
 })
 
-app.get('*', (req, res) => {
+app.get('/error', (req, res) => {
   res.json({
     message: 'Error'
   })
@@ -23,4 +23,4 @@ app.get('*', (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`Server is listening on ${PORT}`)
-}) //nontawat test git commit 2
+}) 
