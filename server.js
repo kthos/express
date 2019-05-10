@@ -9,6 +9,12 @@ app.get('/', (req, res) => {
   })
 })
 
+app.get('/test1', (req, res) => {
+  res.json({
+    message: 'test 1 by nont'
+  })
+})
+
 app.get('*', (req, res) => {
   res.json({
     message: 'Error'
