@@ -11,13 +11,13 @@ app.get('/', (req, res) => {
 
 app.get('/status', (req, res) => {
   res.json({
-    message: 'test 1 by nont'
+    message: 'this is status router'
   })
 })
 
 app.get('/error', (req, res) => {
   res.json({
-    message: 'Error'
+    message: 'this is  Error router'
   })
 })
 
